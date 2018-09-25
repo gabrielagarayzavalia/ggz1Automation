@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="82359" started-at="2018-09-24T02:40:01Z" finished-at="2018-09-24T02:41:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="82359" started-at="2018-09-24T02:40:01Z" finished-at="2018-09-24T02:41:23Z">
+      <class name="tests.StrangeTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:tests.StrangeTest@29ee9faa]" name="setup" is-config="true" duration-ms="10199" started-at="2018-09-24T02:40:01Z" finished-at="2018-09-24T02:40:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="tc04_UpdateItemTitleFromList()[pri:2, instance:tests.StrangeTest@29ee9faa]" name="tc04_UpdateItemTitleFromList" duration-ms="71174" started-at="2018-09-24T02:40:11Z" finished-at="2018-09-24T02:41:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_UpdateItemTitleFromList -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:tests.StrangeTest@29ee9faa]" name="teardown" is-config="true" duration-ms="956" started-at="2018-09-24T02:41:22Z" finished-at="2018-09-24T02:41:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.StrangeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
