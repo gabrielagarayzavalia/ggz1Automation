@@ -8,7 +8,8 @@
 
 3-download zip from github (https://github.com/gabrielagarayzavalia/ggz1Automation)
 
-4-extract to C:\ggAutomation\ (create folder or rename then in project the path to webdriver and pictures) and name for the project is ggz1Automation/ (without the extension master)
+4-extract to C:\ggAutomation\ (create folder or rename in project the paths to webdriver and to pictures) and 
+  name the project: ggz1Automation/ (without the extension master)
 
 5-download selenium webdriver for chrome and place it in: C:\ggAutomation\ggzAutomation01\resourses\chromedriver_win32\chromedriver.exe
 (any change on the path should be replacated in project files: BaseTest.java and StrangeTest.java)
