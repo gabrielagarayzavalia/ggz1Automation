@@ -32,7 +32,7 @@ public class BaseTest {
         driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
-	wait.until(ExpectedConditions.urlContains("#!/main"));
+	wait.until(ExpectedConditions.titleIs("Stranger List"));
        // Thread.sleep(5000);
 	}
 	
