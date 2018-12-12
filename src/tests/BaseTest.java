@@ -28,7 +28,12 @@ public class BaseTest {
  
         //Maximize Window
         driver.manage().window().maximize();
-        Thread.sleep(5000);
+	driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	
+	wait.until(ExpectedConditions.urlContains("#!/main"));
+       // Thread.sleep(5000);
 	}
 	
 	
