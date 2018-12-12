@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class BasePage {
 	
@@ -14,7 +16,13 @@ public class BasePage {
 	public BasePage(WebDriver driver, String URL) throws Exception {
 		this.driver = driver;
 		this.driver.get(URL);
-		Thread.sleep(5000);
+		
+		wait = new WebDriverWait(driver,15);
+		
+		wait.until(ExpectedConditions.urlMatches(URL));
+		
+		//Thread.sleep(5000);
+		
 		PageFactory.initElements(this.driver, this);
 	}
 	
