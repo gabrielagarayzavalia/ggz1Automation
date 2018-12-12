@@ -36,7 +36,12 @@ public class StrangePage extends BasePage{
 	public static StrangePage visitPage(WebDriver driver, String strangeURL) throws Exception {
     	StrangePage page = new StrangePage(driver, strangeURL);
        // StrangePage.irAStrangerListPage(driver);
-        Thread.sleep(10000);
+		
+		wait = new WebDriverWait(driver,15);
+		
+		wait.until(ExpectedConditions.urlMatches(url));
+		
+       // Thread.sleep(10000);
         PageFactory.initElements(driver, page);
         return page;
     }
