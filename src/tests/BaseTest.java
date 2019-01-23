@@ -24,7 +24,7 @@ public class BaseTest {
         driver = new ChromeDriver();
     	//driver = new FirefoxDriver();
 
-        wait = new WebDriverWait(driver,15);
+        wait = new WebDriverWait(driver,30);
  
         //Maximize Window
         driver.manage().window().maximize();
@@ -32,7 +32,7 @@ public class BaseTest {
         driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
-	wait.until(ExpectedConditions.titleIs("Stranger List"));
+	//wait.until(ExpectedConditions.titleIs("Stranger List"));
        // Thread.sleep(5000);
 	}
 	
