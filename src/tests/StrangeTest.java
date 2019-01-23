@@ -61,7 +61,7 @@ public class StrangeTest extends BaseTest {
 	    	Thread.sleep(5000);
 	    	Assert.assertTrue(strangeListPageO.itemInList(addedItem));
 	    	
-	    	//Thread.sleep(15000);
+	    	
 	    //	System.out.println(listSizeBase + " = " +  strangeListPageO.countListItems());
 	    	//Assert.assertEquals(listSizeBase, strangeListPageO.countListItems(), "Counter was not updated"); // needs refactor is countListItems() is retrieving old value
 	    		    	
