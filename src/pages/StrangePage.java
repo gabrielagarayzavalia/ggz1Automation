@@ -10,13 +10,14 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class StrangePage extends BasePage{
 	
     public WebDriver driver;
-    public WebDriverWait wait;
+    public static WebDriverWait wait;
 
 
 	
@@ -39,7 +40,7 @@ public class StrangePage extends BasePage{
 		
 		wait = new WebDriverWait(driver,15);
 		
-		wait.until(ExpectedConditions.urlMatches(url));
+		wait.until(ExpectedConditions.urlMatches(strangeURL));
 		
        // Thread.sleep(10000);
         PageFactory.initElements(driver, page);
@@ -327,3 +328,4 @@ public class StrangePage extends BasePage{
 	
 
 }
+
