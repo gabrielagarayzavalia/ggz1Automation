@@ -11,6 +11,7 @@ public class BasePage {
 	
 	
 	public WebDriver driver;
+	public WebDriverWait wait;
 	
 ////*constructor with url
 	public BasePage(WebDriver driver, String URL) throws Exception {
@@ -59,3 +60,4 @@ public class BasePage {
 	
 
 }
+
