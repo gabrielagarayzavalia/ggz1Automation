@@ -6,15 +6,13 @@
 
 2-verify java path in system variables
 
-3-download zip from github (https://github.com/gabrielagarayzavalia/ggz1Automation)
+3-At Eclipse import project as a java project 
 
-4-At Eclipse import project as a java project 
+4-From Marketplace add Maven and TestNG
 
-5-From Marketplace add Maven and TestNG
+5-Verify all the needed libraries are installed and added to the project (i.e. external jars)
 
-6-Verify all the needed libraries are installed and added to the project (i.e. external jars)
-
-7-Run StrangeTest.java as TestNG Test
+6-Run StrangeTest.java as TestNG Test
 
 
 Notes:
